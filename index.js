@@ -27,11 +27,12 @@ client.on('messageCreate', async message => {
       type: 0
     });
 
-    channel.send(`Bonjour ${message.author}, explique ton problème ici.`);
+    channel.send(`🎫 Bonjour ${message.author}, explique ton problème ici.`);
   }
 
 });
 
 client.login(process.env.TOKEN);
+
 
 
