@@ -19,3 +19,13 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
+
+client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.cache.find(c => c.name === "⛷️㆐arrivants");
+
+  if (!channel) return;
+
+  channel.send(`Bienvenue ${member} sur le serveur !`);
+});
+
